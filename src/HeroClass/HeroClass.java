@@ -89,7 +89,10 @@ class HeroClass {
 
     public void warCry() {
 
-        System.out.println(" death and glory!!! " );
+
+
+
+        System.out.println(    getName() + " Screams " +   " death and glory!!! " );
 
     }
 

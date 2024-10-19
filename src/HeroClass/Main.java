@@ -22,6 +22,9 @@ package HeroClass;
 
         HeroClass Barbarian = new HeroClass( " Rock " , "Barbarian " , 45 , 20 , 20 , 5 );
 
+
+
+
        System.out.println(Warrior.toString());
 
 
@@ -38,15 +41,22 @@ package HeroClass;
             if (Wizard.hp <= 0 && Warrior.hp > 0) {
                 System.out.println("Warrior Wins ");
                 System.out.println(Warrior.hp);
+                Warrior.warCry();
             }
 
             if (Warrior.hp <= 0 && Wizard.hp > 0) {
                 System.out.println("Wizard wins ");
                 System.out.println(Wizard.hp);
+               Wizard.warCry();
 
             }
 
         }
+
+
+        Barbarian.warCry();
+
+
     }
 
 
